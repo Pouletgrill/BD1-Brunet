@@ -1,0 +1,10 @@
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\bin\Debug\TP2 BD.exe.config
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\bin\Debug\TP2 BD.exe
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\bin\Debug\TP2 BD.pdb
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2 BD.csprojResolveAssemblyReference.cache
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Form1.resources
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Properties.Resources.resources
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2 BD.csproj.GenerateResource.Cache
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2 BD.exe
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2 BD.pdb
+C:\Users\201354694\Desktop\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Form2.resources
