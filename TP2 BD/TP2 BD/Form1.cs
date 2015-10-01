@@ -28,6 +28,8 @@ namespace TP2_BD
         {
             Remplir_CB_Fournisseur();
             Remplir_DGV("select * from Inventaire");
+            //DGV_Data.Columns[0].Visible = false;
+            //DGV_Data.Columns[2].Visible = false;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -64,8 +66,6 @@ namespace TP2_BD
                 dataSet = new DataSet();
                 dataAdapter.Fill(dataSet);
                 DGV_Data.DataSource = dataSet.Tables[0];
-                DGV_Data.Columns[0].Visible = false;
-                DGV_Data.Columns[2].Visible = false;
             }
             catch (Exception ex)
             {
