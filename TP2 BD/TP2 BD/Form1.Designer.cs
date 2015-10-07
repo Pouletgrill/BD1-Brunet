@@ -46,17 +46,21 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.GB_ModSupAdd = new System.Windows.Forms.GroupBox();
+            this.BTN_CR = new System.Windows.Forms.Button();
+            this.CB_CR = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_QteStock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_QteMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUD_QteMax)).BeginInit();
             this.GB_ModSupAdd.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BTN_Ajouter
             // 
             this.BTN_Ajouter.Enabled = false;
-            this.BTN_Ajouter.Location = new System.Drawing.Point(93, 321);
+            this.BTN_Ajouter.Location = new System.Drawing.Point(144, 321);
             this.BTN_Ajouter.Name = "BTN_Ajouter";
             this.BTN_Ajouter.Size = new System.Drawing.Size(75, 23);
             this.BTN_Ajouter.TabIndex = 0;
@@ -66,7 +70,7 @@
             // 
             // BTN_Modifier
             // 
-            this.BTN_Modifier.Location = new System.Drawing.Point(174, 321);
+            this.BTN_Modifier.Location = new System.Drawing.Point(225, 321);
             this.BTN_Modifier.Name = "BTN_Modifier";
             this.BTN_Modifier.Size = new System.Drawing.Size(75, 23);
             this.BTN_Modifier.TabIndex = 1;
@@ -76,7 +80,7 @@
             // 
             // BTN_Supprimer
             // 
-            this.BTN_Supprimer.Location = new System.Drawing.Point(255, 321);
+            this.BTN_Supprimer.Location = new System.Drawing.Point(306, 321);
             this.BTN_Supprimer.Name = "BTN_Supprimer";
             this.BTN_Supprimer.Size = new System.Drawing.Size(75, 23);
             this.BTN_Supprimer.TabIndex = 2;
@@ -86,7 +90,7 @@
             // 
             // BTN_Rechercher
             // 
-            this.BTN_Rechercher.Location = new System.Drawing.Point(174, 12);
+            this.BTN_Rechercher.Location = new System.Drawing.Point(286, 12);
             this.BTN_Rechercher.Name = "BTN_Rechercher";
             this.BTN_Rechercher.Size = new System.Drawing.Size(93, 23);
             this.BTN_Rechercher.TabIndex = 3;
@@ -105,13 +109,13 @@
             this.DGV_Data.ReadOnly = true;
             this.DGV_Data.RowHeadersVisible = false;
             this.DGV_Data.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGV_Data.Size = new System.Drawing.Size(420, 155);
+            this.DGV_Data.Size = new System.Drawing.Size(532, 155);
             this.DGV_Data.TabIndex = 4;
             this.DGV_Data.SelectionChanged += new System.EventHandler(this.DGV_Data_SelectionChanged);
             // 
             // TB_Recherche
             // 
-            this.TB_Recherche.Location = new System.Drawing.Point(273, 15);
+            this.TB_Recherche.Location = new System.Drawing.Point(385, 15);
             this.TB_Recherche.Name = "TB_Recherche";
             this.TB_Recherche.Size = new System.Drawing.Size(159, 20);
             this.TB_Recherche.TabIndex = 5;
@@ -162,7 +166,7 @@
             // 
             // NUD_QteStock
             // 
-            this.NUD_QteStock.Location = new System.Drawing.Point(309, 26);
+            this.NUD_QteStock.Location = new System.Drawing.Point(274, 26);
             this.NUD_QteStock.Name = "NUD_QteStock";
             this.NUD_QteStock.Size = new System.Drawing.Size(98, 20);
             this.NUD_QteStock.TabIndex = 13;
@@ -170,7 +174,7 @@
             // 
             // NUD_QteMin
             // 
-            this.NUD_QteMin.Location = new System.Drawing.Point(309, 52);
+            this.NUD_QteMin.Location = new System.Drawing.Point(274, 52);
             this.NUD_QteMin.Name = "NUD_QteMin";
             this.NUD_QteMin.Size = new System.Drawing.Size(98, 20);
             this.NUD_QteMin.TabIndex = 14;
@@ -178,7 +182,7 @@
             // 
             // NUD_QteMax
             // 
-            this.NUD_QteMax.Location = new System.Drawing.Point(309, 78);
+            this.NUD_QteMax.Location = new System.Drawing.Point(274, 78);
             this.NUD_QteMax.Name = "NUD_QteMax";
             this.NUD_QteMax.Size = new System.Drawing.Size(98, 20);
             this.NUD_QteMax.TabIndex = 15;
@@ -187,7 +191,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 33);
+            this.label4.Location = new System.Drawing.Point(209, 33);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 16;
@@ -196,7 +200,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(231, 54);
+            this.label5.Location = new System.Drawing.Point(196, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 13);
             this.label5.TabIndex = 17;
@@ -205,7 +209,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(228, 78);
+            this.label6.Location = new System.Drawing.Point(193, 78);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(74, 13);
             this.label6.TabIndex = 18;
@@ -223,18 +227,55 @@
             this.GB_ModSupAdd.Controls.Add(this.NUD_QteMin);
             this.GB_ModSupAdd.Controls.Add(this.label3);
             this.GB_ModSupAdd.Controls.Add(this.NUD_QteStock);
-            this.GB_ModSupAdd.Location = new System.Drawing.Point(12, 202);
+            this.GB_ModSupAdd.Location = new System.Drawing.Point(77, 202);
             this.GB_ModSupAdd.Name = "GB_ModSupAdd";
-            this.GB_ModSupAdd.Size = new System.Drawing.Size(420, 113);
+            this.GB_ModSupAdd.Size = new System.Drawing.Size(389, 113);
             this.GB_ModSupAdd.TabIndex = 19;
             this.GB_ModSupAdd.TabStop = false;
             this.GB_ModSupAdd.Text = "Inventaire";
+            // 
+            // BTN_CR
+            // 
+            this.BTN_CR.Enabled = false;
+            this.BTN_CR.Location = new System.Drawing.Point(389, 16);
+            this.BTN_CR.Name = "BTN_CR";
+            this.BTN_CR.Size = new System.Drawing.Size(137, 23);
+            this.BTN_CR.TabIndex = 20;
+            this.BTN_CR.Text = "Crystal report";
+            this.BTN_CR.UseVisualStyleBackColor = true;
+            this.BTN_CR.Click += new System.EventHandler(this.BTN_CR_Click);
+            // 
+            // CB_CR
+            // 
+            this.CB_CR.FormattingEnabled = true;
+            this.CB_CR.Items.AddRange(new object[] {
+            "lister fournisseurs",
+            "lister fournisseurs publipostage",
+            "lister fournisseurs avec produits en inventaire",
+            "lister fournisseurs avec produits quantité minimale est atteinte "});
+            this.CB_CR.Location = new System.Drawing.Point(6, 16);
+            this.CB_CR.Name = "CB_CR";
+            this.CB_CR.Size = new System.Drawing.Size(377, 21);
+            this.CB_CR.TabIndex = 21;
+            this.CB_CR.SelectedIndexChanged += new System.EventHandler(this.CB_CR_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.CB_CR);
+            this.groupBox1.Controls.Add(this.BTN_CR);
+            this.groupBox1.Location = new System.Drawing.Point(12, 350);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(532, 46);
+            this.groupBox1.TabIndex = 22;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Crystal Report";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 356);
+            this.ClientSize = new System.Drawing.Size(556, 408);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GB_ModSupAdd);
             this.Controls.Add(this.BTN_QteMinimum);
             this.Controls.Add(this.TB_Recherche);
@@ -254,6 +295,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUD_QteMax)).EndInit();
             this.GB_ModSupAdd.ResumeLayout(false);
             this.GB_ModSupAdd.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,6 +321,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox GB_ModSupAdd;
+        private System.Windows.Forms.Button BTN_CR;
+        private System.Windows.Forms.ComboBox CB_CR;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

@@ -18,3 +18,4 @@ C:\Users\201354694\Desktop\BD1-Brunet\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Form1.resou
 C:\Users\201354694\Desktop\BD1-Brunet\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Form2.resources
 C:\Users\201354694\Desktop\BD1-Brunet\TP2 BD\TP2 BD\obj\Debug\TP2_BD.Properties.Resources.resources
 C:\Users\201354694\Desktop\BD1-Brunet\TP2 BD\TP2 BD\obj\Debug\TP2 BD.csproj.GenerateResource.Cache
+C:\Users\201354694\Desktop\BD1-Brunet\TP2 BD\TP2 BD\obj\Debug\TP2_BD.CRForm.resources

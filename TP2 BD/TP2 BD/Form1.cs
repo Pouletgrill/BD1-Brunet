@@ -28,8 +28,6 @@ namespace TP2_BD
         {
             Remplir_CB_Fournisseur();
             Remplir_DGV("select * from Inventaire");
-            //DGV_Data.Columns[0].Visible = false;
-            //DGV_Data.Columns[2].Visible = false;
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -182,6 +180,16 @@ namespace TP2_BD
         private void BTN_QteMinimum_Click(object sender, EventArgs e)
         {
             Remplir_DGV("select * from Inventaire where QteStock < QteMinimum");
+        }
+
+        private void BTN_CR_Click(object sender, EventArgs e)
+        {
+            new CRForm(CB_CR.SelectedIndex, connexion).ShowDialog();
+        }
+
+        private void CB_CR_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BTN_CR.Enabled = true;
         }
     }
 }
