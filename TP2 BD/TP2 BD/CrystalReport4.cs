@@ -16,14 +16,14 @@ namespace TP2_BD {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReport2 : ReportClass {
+    public class CrystalReport4 : ReportClass {
         
-        public CrystalReport2() {
+        public CrystalReport4() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReport2.rpt";
+                return "CrystalReport4.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace TP2_BD {
         
         public override string FullResourceName {
             get {
-                return "TP2_BD.CrystalReport2.rpt";
+                return "TP2_BD.CrystalReport4.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace TP2_BD {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReport2 : Component, ICachedReport {
+    public class CachedCrystalReport4 : Component, ICachedReport {
         
-        public CachedCrystalReport2() {
+        public CachedCrystalReport4() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace TP2_BD {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReport2 rpt = new CrystalReport2();
+            CrystalReport4 rpt = new CrystalReport4();
             rpt.Site = this.Site;
             return rpt;
         }

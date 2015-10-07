@@ -39,8 +39,7 @@ namespace TP2_BD
                     Rechercher("select * from Fournisseur INNER JOIN inventaire on inventaire.idfournisseur=fournisseur.idfournisseur ", "Fournisseur", "..\\..\\CrystalReport3.rpt");
                     break;
                 case 3:
-                    Rechercher("select * from Fournisseur INNER JOIN inventaire on inventaire.idfournisseur=fournisseur.idfournisseur "+
-                "where QteStock < QteMinimum ", "Fournisseur", "..\\..\\CrystalReport3.rpt");
+                    Rechercher("select * from Inventaire INNER JOIN fournisseur on inventaire.idfournisseur=fournisseur.idfournisseur where QteStock <= QteMinimum ", "Fournisseur", "..\\..\\CrystalReport4.rpt");
                     break;
             }
         }
