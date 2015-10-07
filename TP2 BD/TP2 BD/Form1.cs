@@ -179,7 +179,7 @@ namespace TP2_BD
 
         private void BTN_QteMinimum_Click(object sender, EventArgs e)
         {
-            Remplir_DGV("select * from Inventaire where QteStock < QteMinimum");
+            Remplir_DGV("select * from Inventaire where QteStock <= QteMinimum");
         }
 
         private void BTN_CR_Click(object sender, EventArgs e)
